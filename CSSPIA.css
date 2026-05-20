@@ -1,0 +1,151 @@
+*{
+    margin: 15px;
+    padding: 0px;
+}
+
+/* scroll */
+html {
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: rgb(155, 181, 187);
+    margin: 50px 100px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-family: "Didact Gothic", serif;
+    font-weight: 200;
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(47, 47, 47);
+    text-align: justify;
+}
+
+/* ---------------------------------------------- Barra del menú ------------------------------------- */
+.menu-superior {
+    position: fixed;        
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2b4c59; 
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    z-index: 1000;         
+}
+
+/* Estilo de los botones del menú */
+.menu-superior a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.menu-superior a:hover {
+    color: #aed1d6; 
+}
+
+/* --------------------------------------- TEXTOS ----------------------------------------------------------- */
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Audiowide", serif;
+    font-weight: 900;
+    font-size: 90px;
+    font-style: normal;
+    color: rgb(28, 75, 93);
+    text-align: center;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: "MuseoModerno", serif;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+    color: rgb(3, 32, 57);
+    text-align: left;
+}
+
+h3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Ephesis", serif;
+    font-weight: 450;
+    font-size: 50px;
+    font-style: normal;
+    color: rgb(237, 247, 255);
+    text-align: center;
+}
+
+/*--------------------------------- IMAGENES ------------------------------------------*/
+.fotos1{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+
+      opacity: 1;
+
+       transition: opacity 0.3s ease; 
+}
+.fotos1:hover {
+    opacity: 0.6; 
+    cursor: pointer;
+
+}
+
+.fotos2{
+    width: 25%;
+}
+
+
+#cabeza{
+    width: 100%;
+}
+
+/*------------------------------------- cuadro contenedor (targeta) ----------------------------- */
+.tarjeta-animal {
+    display: flex;
+    align-items: center;    
+    gap: 30px;              
+    
+    background-color: rgba(255, 255, 255, 0.85); 
+    border-left: 8px solid #4a154b;              
+    border-radius: 15px;                         
+    
+    padding: 25px;      
+    margin: 30px auto;  
+    max-width: 900px;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-texto {
+    flex: 1;                
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.contenido-texto h2 {
+    color: #4a154b;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.contenido-texto p {
+    color: #333333;
+    margin: 0;
+    line-height: 1.6;
+}
+
